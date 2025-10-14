@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Meme & Poster Creator 🎨</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>AI Meme & Poster Creator 🎨</h1>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <label for="topic">Enter Topic or Event:</label>
+      <input type="text" id="topic" placeholder="e.g., exam stress, coding life, college fest" />
+
+      <label for="mode">Select Mode:</label>
+      <select id="mode">
+        <option value="meme">😂 Meme Mode</option>
+        <option value="poster">💪 Poster Mode</option>
+      </select>
+
+      <button id="generateBtn">✨ Generate Caption & Image</button>
+      <div id="loader" class="loader" style="display:none;">Generating...</div>
+
+      <div class="preview">
+        <canvas id="memeCanvas"></canvas>
+      </div>
+      <!-- Text Editing Section -->
+
+
+      <div class="actions">
+        <button id="randomBtn">🎲 Random Template</button>
+        <button id="downloadBtn">⬇️ Download Image</button>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>Built by <strong>Shresth Singh</strong> for AI Internship 2025 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
