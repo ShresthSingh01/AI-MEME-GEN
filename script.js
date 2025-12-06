@@ -1,6 +1,5 @@
-// ---------- Configuration ----------
-// Replace this with your OpenAI API key
-const OPENAI_API_KEY = "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";
+
+const OPENAI_API_KEY = "";
 
 // Arrays of image templates for memes and posters
 const memeTemplates = [
@@ -167,3 +166,4 @@ randomBtn.addEventListener("click", () => {
   generateMeme(); // Generate the meme/poster
 });
 downloadBtn.addEventListener("click", downloadImage);
+
